@@ -44,7 +44,7 @@ public class TasksController {
         return ResponseEntity.ok(response);
     }
 
-    @PutMapping("/{idPath}")
+    @PutMapping("/update/{idPath}")
     public ResponseEntity<ResponseTask> updateTask(@PathVariable String idPath, @RequestBody RequestTask task) {
         long id = Long.parseLong(idPath);
         ResponseTask response = service.updateTaskbyId(id, task);
@@ -75,7 +75,7 @@ public class TasksController {
         return ResponseEntity.ok(tasks);
     }
 
-    @DeleteMapping("/{idPath}")
+    @DeleteMapping("/{idPath}/delete")
     public boolean deleteTask(@PathVariable String idPath) {
         long id = Long.parseLong(idPath);
         return service.deleteTaskbyId(id);

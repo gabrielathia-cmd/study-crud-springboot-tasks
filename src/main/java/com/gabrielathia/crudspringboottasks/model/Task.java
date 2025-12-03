@@ -32,6 +32,7 @@ public class Task {
 
     public Task() {
         this.completedDate = null;
+        this.status = Status.PENDENTE;
     }
 
 //Getters and Setters

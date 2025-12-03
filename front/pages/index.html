@@ -6,7 +6,40 @@
     <title>Crud Spring</title>
 </head>
 <body>
-    <h1>SALVE SALVE CRIA</h1>
-    <script src="/script.js"></script>
+    <h1> Comunicação Crud </h1>
+    <br>
+    <h2> Adicionar Tarefa </h2>
+    <form>
+        <input type="text" id="taskName" placeholder="Nome da tarefa">
+        <input type="text" id="taskDescription" placeholder="Descrição da tarefa">
+        <button type="submit" id="buttonAddTask">Adicionar Tarefa</button>
+    </form>
+    <br>
+    <h2> Listar Tarefas </h2>
+    <button type="submit" id="buttonListTask"> Listar Tasks </button>
+    <ul id="taskList"></ul>
+    <br>
+    <h2> Excluir tarefa pelo ID </h2>
+    <form>
+        <input type="text" id="taskId" placeholder="ID da tarefa">
+        <button type="submit" id="buttonDeleteTask">Excluir Tarefa</button>
+    </form>
+    <br>
+    <h2> Alterar Tarefas </h2>
+    <form>
+        <input type="text" id="updateTaskId" placeholder="ID da tarefa">
+        <input type="text" id="updateTaskName" placeholder="Novo nome da tarefa">
+        <input type="text" id="updateTaskDescription" placeholder="Nova descrição da tarefa">
+        <button type="submit" id="buttonUpdateTask">Alterar Tarefa</button>
+    </form>
+    <br>
+    <h2> Concluir Tarefa </h2>
+    <form>
+        <input type="text" id="completeTaskId" placeholder="ID da tarefa">
+        <button type="submit" id="buttonCompleteTask">Concluir Tarefa</button>
+    </form>
+    <br>
+    <script src="/scripts/api.js"></script>
+    <script src="/scripts/frontend.js"></script>
 </body>
 </html>
