@@ -11,12 +11,18 @@ import java.util.List;
 @RequestMapping("/task")
 public class TasksController {
 
+//Class Atributes
+
     private TaskService service;
+
+//DI - Constructor
 
     @Autowired
     public TasksController(TaskService taskService) {
         this.service = taskService;
     }
+
+//Methods
 
     @GetMapping
     public String helloTask() {

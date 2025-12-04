@@ -6,6 +6,9 @@ import com.gabrielathia.crudspringboottasks.enums.Status;
 
 @Entity
 public class Task {
+
+//Class Atributes
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;

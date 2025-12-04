@@ -3,6 +3,9 @@ package com.gabrielathia.crudspringboottasks.dto;
 import com.gabrielathia.crudspringboottasks.enums.Status;
 
 public class ResponseTask {
+
+//Class Atributes
+
     private final long id;
     private String name;
     private String description;
